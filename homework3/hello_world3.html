@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>hello world第三题</title>
+	<script type="text/javascript">
+		function settime(){
+			var today=new Date();
+			var h=today.getHours();
+			var m=today.getMinutes();
+			var s=today.getSeconds();
+			document.getElementById('div1').innerHTML=h+":"+m+":"+s;
+			setTimeout('settime()',1000);
+		}
+	</script>
+</head>
+
+<body onload="settime()">
+	<div id="div1"></div>
+</body>
+</html>
